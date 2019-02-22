@@ -117,7 +117,7 @@ public class BeanValidationProvider {
             method, arguments);
 
         if (!violations.isEmpty()) {
-            throw new ConstraintViolationException(violations);
+            throw new RequestConstraintViolationException(violations);
         }
     }
 
